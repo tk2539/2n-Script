@@ -15,33 +15,33 @@
 ## コマンドリスト
 
 - 基本
-    - input x = 1
-    - output x
-    - print "Hello world!"
+    - `input x = 1`
+    - `output x`
+    - `print "Hello world!"`
 
 - 条件分岐
-    - ?(x > 0)
-    - if ?(x > 5) {}
-    - else if ?(x == 3) {}
-    - else {}
+    - `?(x > 0)`
+    - `if ?(x > 5) {}`
+    - `else if ?(x == 3) {}`
+    - `else {}`
 
 - リストとランダム
-    - addlist list.x = 1,2,3
-    - output list.x
-    - input x = random[1,2,3]
-    - input y = random[list.x]
+    - `addlist list.x = 1,2,3`
+    - `output list.x`
+    - `input x = random[1,2,3]`
+    - `input y = random[list.x]`
 
 - ループ
-    - for 10 {}
-    - while {break}
+    - `for 10 {}`
+    - `while {break}`
 
 - 関数
-    - function sayHello {print "Hello"}
-    - action sayHello()
+    - `function sayHello {print "Hello"}`
+    - `action sayHello()`
 
 - JSON連携
-    - import.json test.json
-    - '''
+    - `import.json test.json`
+    - ```
     operation test {
 
     addlist list.x = json.getkey scores
@@ -50,10 +50,10 @@
 
     }
 
-    '''
+    ```
 
 - サブスクリプト
-    - import.2n submodule.2n
+    - `import.2n submodule.2n`
 
 - ネスト処理
     - while
