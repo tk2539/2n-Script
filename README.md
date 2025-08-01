@@ -41,13 +41,16 @@
 
 - JSON連携
     - import.json test.json
-    - operation test {
+    - '''
+    operation test {
 
     addlist list.x = json.getkey scores
 
     getlist list.x = json.addkey results
 
     }
+
+    '''
 
 - サブスクリプト
     - import.2n submodule.2n
