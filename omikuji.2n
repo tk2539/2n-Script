@@ -12,7 +12,7 @@ function roll
     {
         print "大吉"
     }
-    else if ?(result <= 39)
+    else if ?(result <= 64)
     {
         print "吉"
     }
