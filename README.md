@@ -2,15 +2,15 @@
 
 ## ファイル
 
-- main.py コアこれを実行する
+- main.py => コアこれを実行する
 
-- commandlist.md 2n Scriptで使えるコマンドリスト
+- commandlist.md => 2n Scriptで使えるコマンドリスト
 
-- run_2n.bat Windowsの2nパッチ
+- run_2n.bat => Windowsの2nパッチ
 
-- run_2n.command Macの2nパッチ
+- run_2n.command => Macの2nパッチ
 
-- omikuji.2n 2n Scriptで書かれたテストのおみくじアプリ
+- omikuji.2n => 2n Scriptで書かれたテストのおみくじアプリ
 
 ## コマンドリスト
 
@@ -41,25 +41,32 @@
 
 - JSON連携
     - import.json test.json
+    - operation test {
 
-operation test {
-  addlist list.x = json.getkey scores
-  getlist list.x = json.addkey results
-}
+    addlist list.x = json.getkey scores
+
+    getlist list.x = json.addkey results
+
+    }
 
 - サブスクリプト
     - import.2n submodule.2n
 
 - ネスト処理
+    - while
 
-while
-{
-  if ?(x == 1)
-  {
-    break
-  }
-}
+    {
+
+        if ?(x == 1)
+
+        {
+
+            break
+
+        }
+
+    }
+
 
 - コメントアウト
-
-"#"を先頭に入力
+    - "#"を先頭に入力
