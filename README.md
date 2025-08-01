@@ -41,6 +41,7 @@
 
 - JSON連携
     - import.json test.json
+
 operation test {
   addlist list.x = json.getkey scores
   getlist list.x = json.addkey results
@@ -50,6 +51,7 @@ operation test {
     - import.2n submodule.2n
 
 - ネスト処理
+
 while
 {
   if ?(x == 1)
@@ -59,4 +61,5 @@ while
 }
 
 - コメントアウト
+
 "#"を先頭に入力
