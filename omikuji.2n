@@ -1,0 +1,28 @@
+input x = 1
+for 100
+{
+    addlist list.all = x
+    input x = (x + 1)
+}
+
+function roll
+{
+    input result = random [list.all]
+    if ?(result <= 25)
+    {
+        print "大吉"
+    }
+    else if ?(result <= 39)
+    {
+        print "吉"
+    }
+    else
+    {
+        print "凶"
+    }
+}
+
+for 10
+{
+    action roll ()
+}
