@@ -1,4 +1,4 @@
-# 2n Script
+# **2n Script**
 
 ## ファイル
 
@@ -41,35 +41,14 @@
 
 - JSON連携
     - `import.json test.json`
-    - ```
-    operation test {
-
-    addlist list.x = json.getkey scores
-
-    getlist list.x = json.addkey results
-
-    }
-
-    ```
+    - `operation test {addlist list.x = json.getkey scores}`
+    - `operation test {getlist list.x = json.addkey results}`
 
 - サブスクリプト
     - `import.2n submodule.2n`
 
 - ネスト処理
-    - while
-
-    {
-
-        if ?(x == 1)
-
-        {
-
-            break
-
-        }
-
-    }
-
+    - `while{if ?(x != 1){break}}`
 
 - コメントアウト
     - "#"を先頭に入力
